@@ -1,0 +1,46 @@
+.tweet-details {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.95rem;
+    margin-bottom: 0.2rem;
+    width: 100%;
+    overflow: unset;
+}
+
+.tweet-details .display_name {
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-right: 0.3rem;
+}
+
+.tweet-details .display_name:hover,
+.tweet-details .display_name:active {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.tweet-details .username,
+.tweet-details .date {
+    font-weight: 500;
+    color: var(--grey);
+}
+
+.tweet-details .icon-container {
+    margin: 0;
+}
+
+.separator {
+    margin: 0 0.3rem;
+    color: var(--grey);
+}
+
+.tweet-details .more-options {
+    /* right: -8px;
+    top: 3px; */
+}
+
+.tweet-details .more .icon-container {
+    width: 17px !important;
+    height: 17px !important;
+}

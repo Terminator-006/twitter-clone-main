@@ -1,0 +1,160 @@
+.tweet-form {
+    display: flex;
+    padding: 0.5rem 0.8rem 0 1rem;
+    width: 100% !important;
+}
+
+.tweet-form.force-expand {
+    /* min-height: 100%; */
+    flex-grow: 1;
+}
+
+.tweet-form .pfp-container {
+    min-width: 40px;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+}
+
+.tweet-input {
+    width: 100%;
+}
+
+.tweet-input_container {
+    height: auto;
+}
+
+.tweet-input_container.expanded {
+    border-bottom: 1px solid var(--border);
+    /* height: 100%; */
+}
+
+.tweet-input_container textarea::placeholder {
+    color: var(--input-placeholder);
+    letter-spacing: 0.3px;
+}
+
+.tweet-form .tweet-input_container .tweet-text {
+    display: none;
+}
+
+.tweet-input_container.expanded .tweet-text {
+    display: block;
+}
+
+.media-preview {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.media-preview .media-preview_close {
+    position: absolute;
+    right: 8px;
+    top: 20px !important;
+}
+
+.media-preview img {
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.tweet-input_container.expanded .audience,
+.tweet-input_container.expanded .reply_label {
+    display: flex;
+}
+
+.tweet-form.force-expand .reply_label,
+.tweet-form.force-expand .audience {
+    width: auto;
+}
+
+.tweet-form.force-expand .reply_label {
+    margin-top: auto;
+}
+
+.audience,
+.reply_label {
+    font-weight: 500;
+    width: auto;
+}
+
+.reply_label {
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.2rem 0.65rem;
+    margin-bottom: 0.6rem;
+    border-radius: 99rem;
+    color: var(--primary-colour);
+}
+
+.reply_label .reply_icon {
+    margin-right: 0.5rem;
+}
+
+.reply_label:hover,
+.reply_label:active {
+    background-color: var(--accent-hover);
+}
+
+.reply_label-option {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.audience {
+    display: none;
+    font-size: 0.9rem;
+    color: var(--primary-colour);
+    width: auto;
+    border: 1px solid var(--primary-colour);
+    border-radius: 99rem;
+    padding: 0.15rem 0.8rem;
+    margin: 0.5rem 0;
+}
+
+.audience:hover,
+.audience:active {
+    background-color: var(--accent-hover);
+}
+
+.tweet-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tweet-submit .separator {
+    height: 25px;
+    width: 2px;
+    background-color: rgb(62, 65, 68);
+    border-radius: 99999rem;
+    margin: 0 0.7rem;
+}
+
+.post-btn {
+    border-radius: 99999rem;
+    background-color: var(--primary-colour);
+    padding: 0.4rem 1rem;
+    transition: all 0.2s linear;
+}
+
+.tweet-form .tweet-actions {
+    padding: 0.5rem 0 !important;
+}
+
+.tweet-submit .progressbar-container {
+    width: 23px;
+    height: 23px;
+}
+
+@media screen and (max-width: 500px) {
+    .tweet-submit .progressbar-container {
+        margin-right: 0.5rem;
+        width: 20px;
+        height: 20px;
+    }
+    .tweet-submit .separator {
+        display: none !important;
+    }
+}

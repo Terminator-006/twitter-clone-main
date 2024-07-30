@@ -1,0 +1,88 @@
+.user-card {
+    display: flex;
+    padding: 0.75rem 1rem;
+    transition: background-color 0.2s linear;
+}
+
+.user-card:hover,
+.user-card:active {
+    background-color: var(--tweet-hover);
+}
+
+.user-card_pfp {
+    border-radius: 50%;
+}
+
+.user-card_pfp img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.user-card_details {
+    width: 100%;
+    margin-left: 0.8rem;
+}
+
+.user-card_details .row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-1 .details h3 {
+    font-size: 0.975rem;
+    font-weight: 700;
+}
+
+.row-1 .details p {
+    color: var(--grey);
+    font-size: 0.975rem;
+    font-weight: 500;
+}
+
+.row-2 p {
+    font-size: 0.975rem;
+    margin-top: 0.4rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.follow {
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 0.3rem 1rem;
+    width: 100px;
+}
+
+.user-card .follow.applied:hover,
+.user-card .follow.applied:active {
+    color: rgb(244, 33, 46);
+    border: 1px solid rgb(103, 7, 15);
+    background-color: rgba(244, 33, 46, 0.1);
+}
+
+.user-card .follow.applied:hover span,
+.user-card .follow.applied:active span {
+    display: none;
+}
+
+.user-card .follow.applied:hover:before,
+.user-card .follow.applied:active:before {
+    content: "Unfollow";
+}
+
+.row-1 .details-container {
+    display: flex;
+    margin-top: 0.2rem;
+}
+
+.row-1 .details-container .followed-sign {
+    background-color: var(--search-background);
+    color: var(--grey);
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.13rem 0.3rem;
+    border-radius: 0.3rem;
+    margin-left: 0.5rem;
+}

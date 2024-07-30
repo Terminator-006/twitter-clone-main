@@ -1,0 +1,117 @@
+.display-modal .modal-content {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+}
+
+.display-modal_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0.75rem;
+}
+
+.display-modal_preview {
+    display: flex;
+    width: 90%;
+    border: 1px solid var(--grey);
+    border-radius: 1rem;
+    padding: 1rem;
+    user-select: none;
+}
+
+.display-modal_preview .display-name {
+    color: var(--text-primary);
+    font-weight: 700 !important;
+}
+
+.display-modal_preview .tweet-text span {
+    font-size: 0.9375rem;
+}
+
+.display-modal_preview .pfp-container {
+    margin-right: 1rem;
+    min-width: 40px;
+}
+
+.display-modal_header h1 {
+    text-align: center;
+}
+
+.display-modal_header p {
+    color: var(--grey);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 80%;
+}
+
+.display-modal_section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0.75rem 0;
+}
+
+.display-modal_section-container {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(min(70px, 15vw), 2fr));
+
+    align-content: center;
+    justify-items: center;
+    gap: 0.5rem;
+    row-gap: 1rem;
+    width: 100%;
+    background-color: var(--sidebar-background);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.display-modal_section-container.themes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.display-modal_section-title {
+    color: var(--grey);
+    font-weight: 500;
+}
+
+.display-modal_section-title {
+    margin-bottom: 0.5rem;
+}
+
+.display-modal .accent-btn {
+    padding: 0.6rem 1rem;
+    margin-top: 1rem;
+}
+
+.display-modal_preview .preview-container .display_name {
+    color: var(--text-primary);
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
+.display-modal_preview .preview-container .preview-author {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 635px) {
+    .display-modal_preview {
+        width: 100% !important;
+    }
+    .display-modal_section-container.themes {
+        flex-direction: column;
+    }
+    .display-modal_section-container.themes .theme-radio {
+        width: 100%;
+    }
+    .display-modal_section-container.themes .theme-radio:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+}

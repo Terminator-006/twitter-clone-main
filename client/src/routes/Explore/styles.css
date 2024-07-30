@@ -1,0 +1,106 @@
+.explore-route_header {
+    height: unset;
+}
+
+.explore-section-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.75rem 1rem 1rem 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.explore-route_header .mobile-sidebar_button {
+    margin-right: 1.5rem;
+}
+
+.explore-section-header h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.explore-section-header p {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--grey);
+}
+
+.explore-route_more-btn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    color: var(--primary-colour);
+}
+
+.explore-route .explore-users,
+.explore-route .explore-tweets {
+    /* border-bottom: 1px solid var(--border); */
+    margin-bottom: 1rem;
+}
+
+.explore-route_more-btn:hover,
+.explore-route_more-btn:active {
+    background-color: var(--tweet-hover);
+}
+
+.explore-route .hashtag-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.explore-route .hashtag-list .widget-item {
+    padding: 1rem;
+}
+
+.explore-users_content .simple-card {
+    display: flex;
+}
+
+.explore-users_content .connect-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.explore-users_content .simple-card {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.explore-users_content .connect-item .follow {
+    width: 100px;
+    height: 30px !important;
+}
+
+.explore-users_content .connect-item_header {
+    font-size: 0.938rem;
+    margin: 0 0 0.2rem 0;
+}
+
+.explore-users_content .connect-item_subheader {
+    font-size: 0.938rem;
+    margin-left: -0.075rem;
+}
+
+.explore-tweets_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.explore-tweets_content .trending-item {
+    padding: 1rem !important;
+}
+
+.explore-users_content .placeholder,
+.explore-tweets_content .placeholder {
+    height: 200px;
+}
+
+.explore-route .widget-item .blue_round-btn .icon-container {
+    width: 17px;
+    height: 17px;
+}

@@ -1,0 +1,151 @@
+.tweet-route-header {
+    border-bottom: 0 !important;
+    padding: 0 1rem !important;
+    /* height: 50px !important; */
+}
+
+.tweet-route .original-tweet {
+    overflow: hidden;
+    padding-bottom: 1rem;
+    z-index: 1111;
+}
+
+.tweet-route_general .tweet {
+    border: 0;
+    padding: 0 1rem;
+}
+
+.tweet-route .original-tweet .pfp-container {
+    z-index: 99;
+    position: relative;
+}
+
+.tweet-route .original-tweet .pfp-container .pfp {
+    position: relative;
+    z-index: 999999999;
+}
+
+.tweet-route .quote-preview {
+    margin-bottom: 1rem;
+}
+
+.tweet-route .original-tweet .pfp-container::after {
+    content: "";
+    position: absolute;
+    left: 40%;
+    transform: translateX(-50%);
+    background-color: var(--border-2);
+    border: 1px solid var(--border-2);
+    height: 999vh;
+    z-index: 11;
+}
+
+.tweet-route_general .current-tweet {
+    position: relative !important;
+    z-index: 111;
+    padding: 0 1rem;
+}
+
+.tweet-route .tweet-details_wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.tweet-route .current-tweet .pfp-container {
+    margin-right: 0.75rem;
+    min-width: 40px;
+}
+
+.relevant-tweets .current-tweet .user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info .pfp-container {
+    margin-right: 1rem;
+}
+
+.user-info {
+    display: flex;
+    width: 90%;
+}
+
+.user-info.flex-truncate_parent .flex-truncate_child {
+    max-width: 40%;
+}
+
+.wrapper .displayName {
+    font-size: 0.95rem;
+}
+
+.tweet-route .current-tweet .tweet-content {
+    margin: 1rem 0;
+}
+
+.tweet-route .tweet-content .tweet-text {
+    font-size: 1.065rem;
+}
+
+.tweet-route .blue_round-btn .icon-container {
+    width: 17px;
+    height: 17px;
+}
+
+.tweet-route .tweet-stats .separator {
+    height: 25px;
+    width: 2px;
+    margin: 0 0.5rem;
+}
+
+.tweet-route .tweet-stats .link:hover,
+.tweet-route .tweet-stats .link:active {
+    text-decoration-line: underline;
+    text-decoration-color: var(--grey);
+    text-underline-offset: 2px;
+}
+
+.tweet-route .tweet-stats .stat {
+    font-weight: 500;
+    font-size: 0.938rem !important;
+    color: var(--grey);
+}
+
+.tweet-route .tweet-stats .views {
+    font-size: 0.938rem !important;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.tweet-route .tweet-form {
+    padding: 0 1rem 0.5rem 1rem !important;
+}
+
+.tweet-route .tweet-form .tweet-input_container.expanded {
+    border: 0 !important;
+}
+
+.tweet-route_general .route_wrapper > .tweet-actions {
+    padding: 1rem !important;
+    margin-top: 1rem;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.tweet-route_general .route_wrapper > .tweet-actions .action-btn .icon-container {
+    width: 20px;
+    height: 20px;
+}
+
+.tweet-route_general .preview-list .tweet {
+    border-bottom: 1px solid var(--border);
+    padding: 0.75rem 1rem;
+}
+
+.tweet-route .tweet-form {
+    padding: 0.5rem 1rem 0.5rem 1rem !important;
+}
+
+.relevant-tweets .relevant-tweet:first-child .tweet {
+    margin-top: 0.5rem;
+    padding-bottom: 1rem;
+}

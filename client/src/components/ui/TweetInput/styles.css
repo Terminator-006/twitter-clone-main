@@ -1,0 +1,79 @@
+.tweet-input-wrapper {
+    margin: 1rem 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.tweet-input-wrapper .tweet-text span {
+    color: var(--text-primary);
+}
+
+.tweet-input-wrapper textarea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    font-size: 1.25rem;
+    color: transparent;
+    caret-color: var(--text-primary);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    resize: none;
+}
+
+.tweet-input-wrapper .tweet-text {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    font-weight: 500;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+.post-btn {
+    border-radius: 99999rem;
+    background-color: var(--primary-colour);
+    padding: 0.4rem 1rem;
+    transition: all 0.2s linear;
+}
+
+.media-preview {
+    position: relative;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+
+.media-preview .media-preview_close {
+    position: absolute;
+    right: 15px;
+    top: 30px;
+}
+
+.media-preview .dark_round-btn .icon-container::after {
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.media-preview .dark_round-btn:hover .icon-container::after,
+.media-preview .dark_round-btn:active .icon-container::after {
+    background-color: rgba(26, 26, 26, 0.75);
+}
+
+.media-preview .dark_round-btn .icon {
+    color: var(--white) !important;
+}
+
+.media-preview img {
+    border-radius: 1rem;
+    width: 100%;
+}

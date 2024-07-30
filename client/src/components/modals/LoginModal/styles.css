@@ -1,0 +1,152 @@
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-modal_header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.25rem 0.25rem 0 0.25rem;
+}
+
+.login-modal_header .header-btn .icon-container {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.login-modal_header .header-btn .icon-container .icon {
+    width: 100% !important;
+    /* 
+    width: 100%;
+    height: auto;
+    object-fit: contain; */
+}
+
+.login-modal .logo-container:hover,
+.login-modal .logo-container:active {
+    background: 0;
+}
+
+.login-modal_header .header_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-modal_form {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-modal_form h1 {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: clamp(1.6rem, 5vw, 2rem);
+}
+
+.signin-methods {
+    width: 100%;
+}
+
+.category-separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+.category-separator div {
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0 0.5rem;
+}
+
+.category-separator::before,
+.category-separator::after {
+    content: "";
+    flex-grow: 1;
+    height: 2px;
+    /* margin: 0 10px;  */
+    background-color: var(--black);
+}
+
+.login-modal_form .next {
+    padding: 0.6rem 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.login-modal_form .btn-empty {
+    margin-bottom: 4rem;
+}
+
+.login-modal_form .input-wrapper {
+    margin-bottom: 1.5rem;
+}
+
+.no-account {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--grey);
+}
+
+.no-account .link-blue {
+    font-size: 0.95rem !important;
+}
+
+.forgot-password.link-blue {
+    font-size: 0.95rem !important;
+    font-weight: 500;
+    align-self: flex-start;
+}
+
+.login-modal_form .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.login-modal_form .p2 .password-input {
+    margin-bottom: 0.5rem;
+}
+
+.login-modal_form .p2 .forgot-password {
+    margin-bottom: 2rem;
+}
+
+.login-modal_form .p2 .next {
+    margin-bottom: 4rem;
+}
+
+.login-modal_form .page .input-wrapper {
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .login-modal_form .page {
+        width: 100%;
+    }
+    .login-modal_form h1 {
+        /* width: 70%; */
+    }
+}
+
+.login-modal .header-btn {
+    width: 25px;
+}
+
+.login-modal .header-btn .icon-container::after {
+    width: 35px;
+    height: 35px;
+}

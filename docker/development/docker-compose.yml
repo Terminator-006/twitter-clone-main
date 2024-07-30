@@ -1,0 +1,48 @@
+version: "3"
+
+services:
+    mongo:
+        container_name: mongodb
+        image: mongo
+        env_file: .env
+        ports:
+            - 27017:27017
+        volumes:
+            - data-volume:/data/db
+
+    backend:
+        container_name: backend
+        image: xclone-backend
+        env_file: .env
+        build:
+            context: ../../server
+            dockerfile: Dockerfile
+        ports:
+            - $API_PORT:$API_PORT
+        volumes:
+            - ../../server:/app
+            - /app/node_modules
+
+        depends_on:
+            - mongo
+
+    frontend:
+        container_name: frontend
+        image: xclone-frontend
+        env_file: .env
+        build:
+            context: ../../client
+            dockerfile: Dockerfile
+            args:
+                - API_URL=$API_URL
+                - CLIENT_ORIGIN=$CLIENT_ORIGIN
+        ports:
+            - $CLIENT_PORT:$CLIENT_PORT
+        volumes:
+            - ../../client:/app
+            - /app/node_modules
+        depends_on:
+            - backend
+
+volumes:
+    data-volume:
